@@ -1,0 +1,11 @@
+NV01,Nguyen Hoang,Long,quan li,100.0
+NV02,Tran Thi Minh,Chau,ban hang,120.0
+NV03,Le Quang,Huy,bo phan kho,90.0
+NV04,Pham Thanh,Dat,giao hang,150.0
+NV05,Do Thi My,Linh,bo phan ho tro,210.0
+NV06,Hoang Gia,Bao,bao ve,70.0
+NV07,Nguyen Ngoc,An,lao cong,115.0
+NV08,Le Minh,Khoa,ky thuat,80.0
+NV09,Tran Thi,Thu,ban hang,95.0
+NV10,Pham Duc,Anh,quan li,135.0
+

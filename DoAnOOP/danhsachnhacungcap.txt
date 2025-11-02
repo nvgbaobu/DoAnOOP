@@ -1,0 +1,10 @@
+NCC01,FPT Trading,Ha Noi,02473002222,fpt@fpttrading.vn
+NCC02,Phong Vu Computer,TP.HCM,02838563388,contact@phongvu.vn
+NCC03,An Phat Computer,Hai Phong,02253889966,info@anphatpc.com.vn
+NCC04,GearVN,TP.HCM,02871087788,support@gearvn.com
+NCC05,CellphoneS,Ha Noi,02471005555,info@cellphones.com.vn
+NCC06,Nguyen Kim,TP.HCM,02839253355,cskh@nguyenkim.com
+NCC07,Hoang Ha Mobile,Ha Noi,02471066666,contact@hoanghamobile.com
+NCC08,MemoryZone,Da Nang,02363882299,sales@memoryzone.com.vn
+NCC09,Hacom Computer,Ha Noi,02436281588,info@hacom.vn
+NCC10,Vi Tinh An Khang,Can Tho,02923885577,contact@ankhang.vn

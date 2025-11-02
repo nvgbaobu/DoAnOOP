@@ -1,0 +1,11 @@
+002,Acer Legion 5,Acer,Gaming,2094.0,81,7.0,36
+003,Dell XPS 15,Dell,Gaming,1629.0,477,6.0,24
+004,Lenovo EliteBook 840,Lenovo,Van phong,635.0,228,Tot
+005,Dell ROG Zephyrus,Dell,Gaming,2227.0,441,26.0,12
+006,Dell OMEN 16,Dell,Gaming,2562.0,265,26.0,24
+007,Acer IdeaPad 3,Acer,Van phong,779.0,413,Binh thuong
+008,Dell XPS 15,Dell,Gaming,1968.0,308,27.0,12
+009,Acer VivoBook S15,Acer,Van phong,1055.0,119,Binh thuong
+010,dhf,hfgg,vf,447.0,7,8.0,9
+011,ehh,fgs,355,354.0,4566,m
+012,ddw,fe,f,123.0,123,1123.0,123
