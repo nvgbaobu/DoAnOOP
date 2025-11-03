@@ -1,0 +1,10 @@
+KH01,Nguyen Hoang,Long,nam,0905123456,Ha Noi
+KH02,Tran Thi,Minh Chau,nu,0912987654,Da Nang
+KH03,Le Quang,Huy,nam,0903332211,Ho Chi Minh
+KH04,Pham Thi,My Linh,nu,0906778899,Can Tho
+KH05,Do Minh,Tri,nam,0909998877,Bac Ninh
+KH06,Hoang Ngoc,Lan,nu,0988123456,Hue
+KH07,Nguyen Duc,Anh,nam,0905454545,Quang Nam
+KH08,Le Thi,Thu Trang,nu,0909988776,Thanh Hoa
+KH09,Tran Van,Bao,nam,0903334455,Vinh
+KH10,Pham Ngoc,Han,nu,0907778899,Ha Tinh
