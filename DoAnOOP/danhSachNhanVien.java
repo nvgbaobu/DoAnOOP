@@ -12,10 +12,19 @@ public class danhSachNhanVien {
         n = 0;
     }
 
-    public nhanVien layNhanVienDauTien(String ma) {
-        if (n == 0) {
-            return null;
+    public int getN() {
+        return n;
+    }
+
+    public nhanVien getNV(int i) {
+        if (i >= 0 && i < n) {
+            return ds[i];
         }
+        return null;
+    }
+
+    public nhanVien layNhanVienDauTien(String ma) {
+
         for (nhanVien nv : ds) {
             if (nv.getMaNV().equalsIgnoreCase(ma)) {
                 return nv;
@@ -196,7 +205,6 @@ public class danhSachNhanVien {
 
     // ======= XOA =======
     public void xoa(String ma) {
-        Scanner sc = new Scanner(System.in);
 
         boolean found = false;
 

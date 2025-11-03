@@ -1,6 +1,8 @@
 public class main {
 
     public static void main(String[] args) {
-        new QuanLyHeThong().menu();
+        QuanLyHeThong ql = new QuanLyHeThong();
+        ql.docFile();
+        ql.menu();
     }
 }

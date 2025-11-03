@@ -3,23 +3,30 @@ import java.util.*;
 
 public class QuanLyNhanVien extends QuanLyBanHang {
 
+    public QuanLyNhanVien(danhSachNhanVien ds) {
+        this.dsNhanVien = ds;
+    }
+
     @Override
     public void menu() {
 
         Scanner sc = new Scanner(System.in);
         String tenFile = "danhsachnhanvien.txt";
-        dsNhanVien.docFile(tenFile);
 
         while (true) {
-            System.out.println("\n===== MENU NHAN VIEN =====");
-            System.out.println("1. Xuat danh sach");
-            System.out.println("2. Them nhan vien");
-            System.out.println("3. Sua thong tin nhan vien");
-            System.out.println("4. Xoa nhan vien");
-            System.out.println("5. Tim kiem");
-            System.out.println("6. Thong ke luong");
-            System.out.println("0. Thoat");
+            System.out.println("________________________________________");
+            System.out.println("||            MENU NHAN VIEN           ||");
+            System.out.println("||------------------------------------||");
+            System.out.println("||1. Xuat danh sach                    ||");
+            System.out.println("||2. Them nhan vien                    ||");
+            System.out.println("||3. Sua thong tin nhan vien           ||");
+            System.out.println("||4. Xoa nhan vien                     ||");
+            System.out.println("||5. Tim kiem                          ||");
+            System.out.println("||6. Thong ke luong                    ||");
+            System.out.println("||0. Thoat                             ||");
+            System.out.println("________________________________________");
             System.out.print("Chon: ");
+
             int chon = sc.nextInt();
             sc.nextLine();
 

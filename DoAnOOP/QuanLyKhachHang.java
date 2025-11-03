@@ -3,23 +3,28 @@ import java.util.Scanner;
 
 public class QuanLyKhachHang extends QuanLyBanHang {
 
+    public QuanLyKhachHang(danhSachKhachHang ds) {
+        this.dsKhachHang = ds;
+    }
+
     @Override
     public void menu() {
         Scanner sc = new Scanner(System.in);
-        String tenFile = "danhsachkhachhang.txt";
-        dsKhachHang.docFile(tenFile);
 
         while (true) {
-            System.out.println("\n===== MENU KHACH HANG =====");
-            System.out.println("1. Xuat danh sach");
-            System.out.println("2. Them khach hang");
-            System.out.println("3. Sua thong tin");
-            System.out.println("4. Xoa khach hang");
-            System.out.println("5. Tim kiem");
-
-            System.out.println("6. Thong ke gioi tinh");
-            System.out.println("0. Thoat");
+            System.out.println("________________________________________");
+            System.out.println("||             MENU KHACH HANG         ||");
+            System.out.println("||------------------------------------||");
+            System.out.println("||1. Xuat danh sach                    ||");
+            System.out.println("||2. Them khach hang                   ||");
+            System.out.println("||3. Sua thong tin                     ||");
+            System.out.println("||4. Xoa khach hang                    ||");
+            System.out.println("||5. Tim kiem                          ||");
+            System.out.println("||6. Thong ke gioi tinh                ||");
+            System.out.println("||0. Thoat                             ||");
+            System.out.println("________________________________________");
             System.out.print("Chon: ");
+
             int chon = sc.nextInt();
             sc.nextLine();
 
@@ -69,7 +74,7 @@ public class QuanLyKhachHang extends QuanLyBanHang {
                     dsKhachHang.thongKeGioiTinh();
 
                 case 0 -> {
-                    dsKhachHang.ghiFile(tenFile);
+                    dsKhachHang.ghiFile("danhsachkhachhang.txt");
                     System.out.println("Thoat chuong trinh!");
                     return;
                 }

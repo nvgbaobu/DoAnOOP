@@ -3,21 +3,29 @@ import java.util.Scanner;
 
 public class QuanLyChiTietSanPham extends QuanLyBanHang {
 
+    public QuanLyChiTietSanPham(danhSachChiTietSanPham ds) {
+        this.dsCTSP = ds;
+    }
+
     @Override
     public void menu() {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n===== MENU CHI TIET SAN PHAM =====");
-            System.out.println("1. Xuat danh sach");
-            System.out.println("2. Them san pham");
-            System.out.println("3. Sua san pham");
-            System.out.println("4. Xoa san pham");
-            System.out.println("5. Thong ke tan so quet");
-            System.out.println("6. Doc danh sach tu file");
-            System.out.println("7. Ghi danh sach ra file");
-            System.out.println("0. Thoat");
+            System.out.println("________________________________________");
+            System.out.println("||        MENU CHI TIET SAN PHAM      ||");
+            System.out.println("||------------------------------------||");
+            System.out.println("||1. Xuat danh sach                    ||");
+            System.out.println("||2. Them san pham                     ||");
+            System.out.println("||3. Sua san pham                      ||");
+            System.out.println("||4. Xoa san pham                      ||");
+            System.out.println("||5. Thong ke tan so quet              ||");
+            System.out.println("||6. Doc danh sach tu file             ||");
+            System.out.println("||7. Ghi danh sach ra file             ||");
+            System.out.println("||0. Thoat                             ||");
+            System.out.println("________________________________________");
             System.out.print("Chon: ");
+
             int chon = sc.nextInt();
             sc.nextLine();
 

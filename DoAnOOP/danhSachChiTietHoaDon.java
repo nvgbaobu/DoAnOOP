@@ -15,7 +15,6 @@ public class danhSachChiTietHoaDon {
     public danhSachChiTietHoaDon(danhSachMayTinh dsMayTinh, danhSachKhachHang dsKhachHang, danhSachNhanVien dsNhanVien) {
         ds = new chiTietHoaDon[0];
         n = 0;
-        docFile(fileName);
         this.dsMT = dsMayTinh;
         this.dsKH = dsKhachHang;
         this.dsNV = dsNhanVien;
@@ -82,6 +81,33 @@ public class danhSachChiTietHoaDon {
         } catch (Exception e) {
             System.out.println("LOI GHI FILE: " + e.getMessage());
         }
+    }
+
+    public chiTietHoaDon timtheomaNV(String manv) {
+        for (chiTietHoaDon ct : ds) {
+            if (ct.getMaNV().equalsIgnoreCase(manv)) {
+                return ct;
+            }
+
+        }
+        return null;
+    }
+
+    public chiTietHoaDon[] timTatCaTheoMaNV(String ma) {
+        int count = 0;
+        for (chiTietHoaDon ct : ds) {
+            if (ct.getMaNV().equalsIgnoreCase(ma)) {
+                count++;
+            }
+        }
+        chiTietHoaDon[] kq = new chiTietHoaDon[count];
+        int j = 0;
+        for (int i = 0; i < n; i++) {
+            if (ds[i].getMaNV().equalsIgnoreCase(ma)) {
+                kq[j++] = ds[i];
+            }
+        }
+        return kq;
     }
 
     // THÊM CHI TIẾT HÓA ĐƠN (TỰ ĐỘNG LẤY THÔNG TIN)
@@ -160,5 +186,4 @@ public class danhSachChiTietHoaDon {
         return tong;
     }
 
-    // MENU
 }

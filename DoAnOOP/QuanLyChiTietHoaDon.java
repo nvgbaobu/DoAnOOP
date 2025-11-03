@@ -5,22 +5,31 @@ import java.util.Scanner;
 
 public class QuanLyChiTietHoaDon extends QuanLyBanHang {
 
+    public QuanLyChiTietHoaDon(danhSachChiTietHoaDon ds) {
+        this.dsChiTietHoaDon = ds;
+    }
+
+    @Override
     public void menu() {
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("\n===== MENU CHI TIET HOA DON =====");
-            System.out.println("1. Xuat danh sach");
-            System.out.println("2. Them chi tiet (cho hoa don moi)");
-            System.out.println("3. Tim kiem theo ma hoa don");
-            System.out.println("4. Xem tong tien hoa don");
-            System.out.println("0. Thoat");
+            System.out.println("________________________________________");
+            System.out.println("||         MENU CHI TIET HOA DON       ||");
+            System.out.println("||------------------------------------||");
+            System.out.println("||1. Xuat danh sach                   ||");
+            System.out.println("||2. Them chi tiet (cho hoa don moi)  ||");
+            System.out.println("||3. Tim kiem theo ma hoa don         ||");
+            System.out.println("||4. Xem tong tien hoa don            ||");
+            System.out.println("||0. Thoat                            ||");
+            System.out.println("________________________________________");
             System.out.print("Chon: ");
+
             int chon = sc.nextInt();
             sc.nextLine();
 
             switch (chon) {
                 case 1 ->
-                    dsCTSP.xuat();
+                    dsChiTietHoaDon.xuat();
                 case 2 -> {
                     System.out.print("Nhap ma hoa don: ");
                     String maHD = sc.nextLine().trim();

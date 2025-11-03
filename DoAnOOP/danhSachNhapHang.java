@@ -11,7 +11,6 @@ public class danhSachNhapHang {
     public danhSachNhapHang(danhSachMayTinh mt) {
         ds = new nhapHang[0];
         n = 0;
-        docFile("danhsachphieunhap.txt");
         dssp = mt;
     }
 
@@ -23,6 +22,11 @@ public class danhSachNhapHang {
                 if (p.length == 8) {
                     nhapHang nh = new nhapHang(p[0], p[1], Integer.parseInt(p[2]),
                             p[3], p[4], p[5], p[6], p[7]);
+                    mayTinh mt = dssp.layMayTinh(p[0]);
+                    if (mt != null) {
+                        mt.setSoLuong(mt.getSoLuong() + Integer.parseInt(p[2]));
+                    }
+
                     ds = Arrays.copyOf(ds, n + 1);
                     ds[n++] = nh;
                 }

@@ -1,11 +1,9 @@
-002,Acer Legion 5,Acer,Gaming,2094.0,81,7.0,36
-003,Dell XPS 15,Dell,Gaming,1629.0,477,6.0,24
-004,Lenovo EliteBook 840,Lenovo,Van phong,635.0,228,Tot
-005,Dell ROG Zephyrus,Dell,Gaming,2227.0,441,26.0,12
-006,Dell OMEN 16,Dell,Gaming,2562.0,265,26.0,24
-007,Acer IdeaPad 3,Acer,Van phong,779.0,413,Binh thuong
-008,Dell XPS 15,Dell,Gaming,1968.0,308,27.0,12
-009,Acer VivoBook S15,Acer,Van phong,1055.0,119,Binh thuong
-010,dhf,hfgg,vf,447.0,7,8.0,9
-011,ehh,fgs,355,354.0,4566,m
-012,ddw,fe,f,123.0,123,1123.0,123
+MT001,MSI Predator Helios,MSI,Gaming,4.5E7,4,10.0,36
+MT002,Acer Legion 5,ACER,Gaming,3.2E7,6,8.0,24
+MT003,Dell XPS 15,DELL,Ultrabook,3.8E7,3,5.0,24
+MT004,Lenovo EliteBook 840,LENOVO,Office,2.2E7,4,0.0,12
+MT005,Dell ROG Zephyrus,ASUS,Gaming,5.5E7,2,15.0,36
+MT006,Dell OMEN 16,HP,Gaming,6.8E7,2,12.0,36
+MT007,Acer IdeaPad 3,ACER,Office,1.2E7,10,0.0,12
+MT008,Dell XPS 15,DELL,Creative,4.8E7,2,10.0,24
+MT009,Acer VivoBook S15,ACER,Office,1.8E7,6,5.0,12

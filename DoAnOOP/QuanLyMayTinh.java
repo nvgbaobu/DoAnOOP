@@ -3,20 +3,28 @@ import java.util.Scanner;
 
 public class QuanLyMayTinh extends QuanLyBanHang {
 
+    public QuanLyMayTinh(danhSachMayTinh ds) {
+        this.dsMayTinh = ds;
+    }
+
     @Override
     public void menu() {
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("\n===== MENU MAY TINH =====");
-            System.out.println("1. Xuat danh sach");
-            System.out.println("2. Them may");
-            System.out.println("3. Tim kiem");
-            System.out.println("4. Sua may");
-            System.out.println("5. Xoa may");
-            System.out.println("6. Thong ke so luong");
-            System.out.println("7. Thong ke gia tri");
-            System.out.println("0. Thoat");
+            System.out.println("________________________________________");
+            System.out.println("||             MENU MAY TINH           ||");
+            System.out.println("||------------------------------------||");
+            System.out.println("||1. Xuat danh sach                    ||");
+            System.out.println("||2. Them may                          ||");
+            System.out.println("||3. Tim kiem                          ||");
+            System.out.println("||4. Sua may                           ||");
+            System.out.println("||5. Xoa may                           ||");
+            System.out.println("||6. Thong ke so luong                 ||");
+            System.out.println("||7. Thong ke gia tri                  ||");
+            System.out.println("||0. Thoat                             ||");
+            System.out.println("________________________________________");
             System.out.print("Chon: ");
+
             int chon = sc.nextInt();
             sc.nextLine();
             switch (chon) {

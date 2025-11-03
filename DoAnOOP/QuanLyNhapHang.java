@@ -3,18 +3,26 @@ import java.util.Scanner;
 
 public class QuanLyNhapHang extends QuanLyBanHang {
 
+    public QuanLyNhapHang(danhSachNhapHang ds) {
+        this.dsNhapHang = ds;
+    }
+
     @Override
     public void menu() {
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("\n=== MENU QUAN LY PHIEU NHAP ===");
-            System.out.println("1. Them phieu nhap");
-            System.out.println("2. Xoa phieu nhap theo ma san pham");
-            System.out.println("3. Tim kiem phieu nhap");
-            System.out.println("4. Xuat danh sach phieu nhap");
-            System.out.println("5. Thong ke so luong may tinh");
-            System.out.println("0. Thoat");
+            System.out.println("________________________________________");
+            System.out.println("||       MENU QUAN LY PHIEU NHAP       ||");
+            System.out.println("||------------------------------------||");
+            System.out.println("||1. Them phieu nhap                   ||");
+            System.out.println("||2. Xoa phieu nhap theo ma san pham   ||");
+            System.out.println("||3. Tim kiem phieu nhap               ||");
+            System.out.println("||4. Xuat danh sach phieu nhap         ||");
+            System.out.println("||5. Thong ke so luong may tinh        ||");
+            System.out.println("||0. Thoat                             ||");
+            System.out.println("________________________________________");
             System.out.print("Chon: ");
+
             int choice = sc.nextInt();
             sc.nextLine();
             switch (choice) {

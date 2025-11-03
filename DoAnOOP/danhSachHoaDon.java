@@ -13,7 +13,7 @@ public class danhSachHoaDon {
     public danhSachHoaDon(danhSachMayTinh dsmt) {
         ds = new hoaDon[0];
         n = 0;
-        docFile(fileName);
+
         this.dsMT = dsmt;
 
     }

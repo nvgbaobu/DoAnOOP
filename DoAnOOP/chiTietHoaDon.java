@@ -95,6 +95,6 @@ public class chiTietHoaDon {
     public static void xuatTieuDe() {
         System.out.printf("%-10s %-10s %-10s %-10s %-25s %-20s %-15s %-5s %-12s %-12s %-12s %-12s\n",
                 "MaHD", "MaSP", "MaKH", "MaNV", "TenSP", "TenKH", "TenNV", "SL", "DonGia", "ThanhTien", "SDT", "NgayXuat");
-        System.out.println("-".repeat(165));
+
     }
 }

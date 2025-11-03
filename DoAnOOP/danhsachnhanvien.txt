@@ -8,4 +8,4 @@ NV07,Nguyen Ngoc,An,lao cong,115.0
 NV08,Le Minh,Khoa,ky thuat,80.0
 NV09,Tran Thi,Thu,quan li,95.0
 NV10,Pham Duc,Anh,quan li,135.0
-nv11,vo ngoc,chuong,quan li,1234.0
+

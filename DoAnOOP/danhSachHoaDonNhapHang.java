@@ -6,7 +6,7 @@ class danhSachHoaDonNhapHang {
 
     private hoaDonNhapHang[] ds;
     private int n;
-    private final String fileName = "danhsachhoadon.txt";
+    private final String tenfile = "danhsachhoadonnhaphang.txt";
     nhapHang nh;
     danhSachNhapHang dsNhap;
     danhSachNhaCungCap dsNCC;
@@ -15,7 +15,7 @@ class danhSachHoaDonNhapHang {
     public danhSachHoaDonNhapHang(nhapHang nh, danhSachNhapHang dsNhap, danhSachNhaCungCap dsNCC, danhSachMayTinh dsMayTinh) {
         ds = new hoaDonNhapHang[0];
         n = 0;
-        docFile();
+
         this.nh = nh;
         this.dsNCC = dsNCC;
         this.dsNhap = dsNhap;
@@ -31,7 +31,7 @@ class danhSachHoaDonNhapHang {
 
         ds = Arrays.copyOf(ds, n + 1);
         ds[n++] = hd;
-        hd.ghiFile(fileName); // ghi vao file ngay khi them
+        hd.ghiFile(tenfile); // ghi vao file ngay khi them
         System.out.println("Da tao hoa don: " + maHD);
     }
 
@@ -59,7 +59,7 @@ class danhSachHoaDonNhapHang {
     }
 
     // ===== DOC FILE =====
-    private void docFile() {
+    public void docFile(String fileName) {
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -107,13 +107,13 @@ class danhSachHoaDonNhapHang {
 
         ds = Arrays.copyOf(ds, n + 1);
         ds[n++] = hd;
-        hd.ghiFile(fileName);
+        hd.ghiFile(tenfile);
 
         System.out.println("\nHOA DON DA TAO TU DONG:");
         System.out.printf("%-10s %-20s %-10s %-20s %-10d %-12.2f %-12.2f %-15s\n",
                 "MaHD", "NhaCungCap", "MaSP", "TenSP", "SL", "DonGia", "ThanhTien", "NguoiNhan");
         hd.xuat();
-        System.out.println("Da luu vao file: " + fileName);
+        System.out.println("Da luu vao file: " + tenfile);
     }
 
 }

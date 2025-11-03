@@ -13,7 +13,7 @@ public class danhSachChiTietSanPham {
 
         ds = new chiTietSanPham[0];
         n = 0;
-        docFile("danhsachchitietsanpham.txt");
+
     }
 
     public danhSachChiTietSanPham(danhSachMayTinh mt) {

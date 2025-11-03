@@ -12,7 +12,7 @@ public class danhSachMayTinh {
     public danhSachMayTinh() {
         ds = new mayTinh[0];
         n = 0;
-        docFile("danhsachmaytinh.txt");
+
         dsCTSP = new danhSachChiTietSanPham();
 
     }

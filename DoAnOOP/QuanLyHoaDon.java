@@ -2,24 +2,31 @@
 import java.util.Scanner;
 
 public class QuanLyHoaDon extends QuanLyBanHang {
-    // MENU CHÍNH
+
+    public QuanLyHoaDon(danhSachHoaDon ds) {
+        this.dsHoaDonBanHang = ds;
+    }
 
     @Override
     public void menu() {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n===== MENU QUAN LY HOA DON BAN HANG =====");
-            System.out.println("1. Xuat danh sach hoa don");
-            System.out.println("2. Them hoa don moi");
-            System.out.println("3. Tim kiem theo ma hoa don");
-            System.out.println("4. Tim kiem theo ma san pham");
-            System.out.println("5. Xoa hoa don");
-            System.out.println("6. Thong ke doanh thu");
-            System.out.println("7. Doc lai tu file");
-            System.out.println("8. Ghi ra file");
-            System.out.println("0. Thoat");
+            System.out.println("________________________________________");
+            System.out.println("||     MENU QUAN LY HOA DON BAN HANG   ||");
+            System.out.println("||------------------------------------||");
+            System.out.println("||1. Xuat danh sach hoa don            ||");
+            System.out.println("||2. Them hoa don moi                  ||");
+            System.out.println("||3. Tim kiem theo ma hoa don          ||");
+            System.out.println("||4. Tim kiem theo ma san pham         ||");
+            System.out.println("||5. Xoa hoa don                        ||");
+            System.out.println("||6. Thong ke doanh thu                ||");
+            System.out.println("||7. Doc lai tu file                    ||");
+            System.out.println("||8. Ghi ra file                        ||");
+            System.out.println("||0. Thoat                             ||");
+            System.out.println("________________________________________");
             System.out.print("Chon: ");
+
             int chon = sc.nextInt();
             sc.nextLine();
 

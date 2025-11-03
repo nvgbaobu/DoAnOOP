@@ -1,5 +1,11 @@
 
 abstract class QuanLyBanHang {
+    //chỉ demo chay thu thoi có gì thay public thành private
+//public danhSachMayTinh getDsMayTinh() {
+//return dsMayTinh;
+//}
+//qlbh.getDsMayTinh().xuat();
+//thay the cho tất cả các hàm 
 
     public danhSachMayTinh dsMayTinh = new danhSachMayTinh();
     public danhSachChiTietSanPham dsCTSP = new danhSachChiTietSanPham(dsMayTinh);
@@ -9,8 +15,6 @@ abstract class QuanLyBanHang {
     public danhSachNhapHang dsNhapHang = new danhSachNhapHang(dsMayTinh);
     nhapHang nh = new nhapHang();
     public danhSachHoaDonNhapHang dsHoaDon = new danhSachHoaDonNhapHang(nh, dsNhapHang, dsNhaCungCap, dsMayTinh);
-
-    // THÊM 2 ĐỐI TƯỢNG MỚI
     public danhSachHoaDon dsHoaDonBanHang = new danhSachHoaDon(dsMayTinh);
     public danhSachChiTietHoaDon dsChiTietHoaDon = new danhSachChiTietHoaDon(dsMayTinh, dsKhachHang, dsNhanVien);
 
