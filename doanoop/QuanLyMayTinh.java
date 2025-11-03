@@ -34,7 +34,7 @@ public class QuanLyMayTinh extends QuanLyBanHang {
 
                     mayTinh mt;
                     int choice;
-                    System.out.println("nhap ma san pham: ");
+                    System.out.print("nhap ma san pham: ");
                     String ma = sc.nextLine();
                     while (dsMayTinh.kiemTraMaTrung(ma)) {
                         System.out.println("vui long nhap lai ma moi ");
