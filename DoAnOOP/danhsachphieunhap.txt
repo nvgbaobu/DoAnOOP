@@ -1,7 +1,0 @@
-MT001,MSI Predator Helios,2,Tran,Van A,Le,Thi B,2025-10-15
-MT002,Acer Legion 5,3,Nguyen,Van C,Pham,Thi D,2025-10-16
-MT003,Dell XPS 15,1,Hoang,Van E,Do,Thi F,2025-10-17
-MT005,Dell ROG Zephyrus,1,Le,Van G,Tran,Thi H,2025-10-18
-MT006,Dell OMEN 16,1,Pham,Van I,Ho,Thi K,2025-10-19
-MT007,Acer IdeaPad 3,5,Nguyen,Van L,Do,Thi M,2025-10-20
-MT009,Acer VivoBook S15,3,Tran,Van N,Le,Thi P,2025-10-21

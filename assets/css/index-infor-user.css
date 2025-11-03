@@ -1,0 +1,94 @@
+/* ------------------- CSS CHO MODAL HIỂN THỊ THÔNG TIN USER ------------------- */
+
+/* Lớp phủ (Overlay) làm mờ nền */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Nền tối mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Đảm bảo nó nằm trên tất cả */
+    visibility: hidden; /* Mặc định ẩn */
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Hiển thị modal */
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Khung Modal chính */
+.user-info-modal {
+    position: static; /* <-- THÊM DÒNG NÀY VÀO */
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-out;
+}
+
+.modal-overlay.active .user-info-modal {
+    transform: scale(1); /* Phóng to nhẹ khi hiện */
+}
+
+.user-info-modal h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #07261c;
+    font-size: 24px;
+}
+
+.user-info-content div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.user-info-content div:last-child {
+    border-bottom: none;
+}
+
+.user-info-content span {
+    font-size: 16px;
+}
+
+.user-info-content .label {
+    font-weight: bold;
+    color: #333;
+}
+
+.user-info-content .value {
+    color: #555;
+    text-align: right;
+}
+
+.close-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #07261c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #047844;
+}
+
+
+/* ------------------- CSS THÊM CHO TÊN NGƯỜI DÙNG ------------------- */
